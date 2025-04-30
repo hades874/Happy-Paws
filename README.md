@@ -1,4 +1,4 @@
-# HappyPaws
+# Happy Paws
 
 **Happy Paws** is a responsive, front-end website designed for a fictional pet adoption service. It showcases modern web development practices using HTML, CSS, and JavaScript to create a visually appealing and user-friendly experience for potential pet adopters.
 
