@@ -1,0 +1,67 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+        }
+
+        #side-menu {
+            background-color: #333;
+            color: white;
+            width: 200px;
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        #content {
+            flex: 1;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        p {
+            color: #666;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 10px;
+            padding: 5px;
+            transition: background-color 0.3s;
+        }
+
+            a:hover {
+                background-color: #555;
+            }
+    </style>
+</head>
+<body>
+
+    <div id="side-menu">
+        @Html.ActionLink("Add New Employee", "addEmployee", "Admin")
+        @Html.ActionLink("Add New Employee", "addEmployee", "Admin")
+        @Html.ActionLink("Add New Employee", "addEmployee", "Admin")
+        <!-- Add more menu items as needed -->
+    </div>
+
+    <div id="content">
+        @RenderBody()
+    </div>
+
+</body>
+</html>
